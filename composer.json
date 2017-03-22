@@ -1,0 +1,37 @@
+{
+  "name"        : "blueblazeassociates/blueblaze-disable-themefusion-news",
+  "description" : "Blue Blaze Disable ThemeFusion News Widget: Disables the ThemeFusion News widget.",
+  "type"        : "wordpress-plugin",
+  "homepage"    : "https://github.com/blueblazeassociates/blueblaze-disable-themefusion-news",
+  "license" : [
+    "GPL-2.0+"
+  ],
+  "authors" : [{
+      "name"     : "Blue Blaze Associates",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Owner",
+      "email"    : "admin@blueblazeassociates.com"
+    }, {
+      "name"     : "Ed Gifford",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Developer",
+      "email"    : "egifford@blueblazeassociates.com"
+    }
+  ],
+  "keywords" : [
+  ],
+  "replace" : {
+  },
+  "require" : {
+    "php" : ">=7.0.0"
+  },
+  "require-dev" : {
+    "roave/security-advisories"    : "dev-master",
+    "sllh/composer-versions-check" : "^2.0"
+  },
+  "suggest": {
+  },
+  "config" : {
+    "php" : "7.0.0"
+  }
+}
