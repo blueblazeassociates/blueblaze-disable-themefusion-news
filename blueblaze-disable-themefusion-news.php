@@ -11,7 +11,7 @@
  * Plugin Name:       Blue Blaze Disable ThemeFusion News Widget
  * Plugin URI:        https://github.com/blueblazeassociates/blueblaze-disable-themefusion-news
  * Description:       Disables the ThemeFusion News widget.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Blue Blaze Associates
  * Author URI:        http://www.blueblazeassociates.com
  * License:           GPL v2 or later
@@ -23,7 +23,9 @@
  */
 
 /**
+ * Removes the 'themefusion_news'  meta box from the WordPress dashboard.
  *
+ * @since 1.0.0
  */
 function blueblaze__disable_themefusion_news() {
   /*
@@ -40,9 +42,9 @@ function blueblaze__disable_themefusion_news() {
   $dashboard = $wp_meta_boxes['dashboard']['normal']['core'];
 
   // Remove themefusion_news from the array.
-  unset( $normal_dashboard['themefusion_news'] );
+  unset( $dashboard['themefusion_news'] );
 
   // Save the array back into the original metaboxes.
-  $wp_meta_boxes['dashboard']['normal']['core'] = $normal_dashboard;
+  $wp_meta_boxes['dashboard']['normal']['core'] = $dashboard;
 }
 add_action( 'wp_dashboard_setup', 'blueblaze__disable_themefusion_news', 11 ); // Needs to run later than default 10 in order to beat Avada.
